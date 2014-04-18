@@ -20,6 +20,7 @@
       </div>
     <% else %>
       <%= link_to "Log In", new_user_session_path, class: "navbar-text pull-right" %>
+      <%= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook), class: "navbar-text pull-right" %>
       <%= link_to "Sign Up", new_user_registration_path, class: "navbar-text pull-right" %>
     <% end %>
     <div class="navbar-text pull-right">

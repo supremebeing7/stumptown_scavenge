@@ -20,6 +20,7 @@ gem 'inherited_resources'
 gem 'cancancan', '~> 1.7'
 gem 'has_scope'
 gem 'responders'
+gem 'omniauth-facebook'
 
 
 group :development do
