@@ -2,6 +2,6 @@ class UsersController < InheritedResources::Base
 
 private
   def user_params
-    params.require(:user).permit(:name, :password)
+    params.require(:user).permit(:name, :password, :role)
   end
 end

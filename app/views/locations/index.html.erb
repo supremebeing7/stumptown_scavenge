@@ -1,3 +1,9 @@
 <h1>Hunting Spots</h1>
 
-<%= link_to "Add a Location", new_resource_url %>
+<% @locations.each do |location| %>
+  <p><%= location.name %></p>
+<% end %>
+
+<% if can? :create, @location %>
+  <%= link_to "Add a Location", new_resource_url %>
+<% end %>
