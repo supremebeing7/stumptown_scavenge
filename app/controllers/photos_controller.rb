@@ -1,4 +1,5 @@
 class PhotosController < InheritedResources::Base
+  respond_to :js, :only => :create
   before_filter :set_photo_params, only: [:create]
   load_and_authorize_resource
   # belongs_to :location

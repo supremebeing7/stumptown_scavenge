@@ -1,7 +1,7 @@
 <div class="img-container">
      <ul class="row">
      <% @location.photos.each do |photo| %>
-          <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><%= image_tag photo.pic(:medium), :class => 'img-responsive' %><%= "#{photo.caption}#{photo.taken}" %></li>
+          <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4" id="new-photo"><%= image_tag photo.pic(:medium), :class => 'img-responsive' %><%= "#{photo.caption}#{photo.taken}" %></li>
       <% end %>
     </ul>
 </div>
