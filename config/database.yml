@@ -1,0 +1,13 @@
+
+development:
+  adapter: postgresql
+  database: stumptown_scavenge_development
+
+test:
+  adapter: postgresql
+  database: stumptown_scavenge_test
+
+production:
+  adapter: postgresql
+  database: stumptown_scavenge_production
+
