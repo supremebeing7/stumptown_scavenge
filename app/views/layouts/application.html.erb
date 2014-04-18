@@ -16,7 +16,7 @@
     <% if user_signed_in? %>
       <%= link_to "Log Out", destroy_user_session_path, method: "delete", class: "navbar-text pull-right" %>
       <div class="navbar-text pull-right">
-       Logged in as &nbsp;<%= link_to current_user.name, root_url %>
+       Logged in as &nbsp;<%= link_to current_user.name, root_url %>&nbsp<%= image_tag current_user.profile_pic, class: "navbar-sized" %>
       </div>
     <% else %>
       <%= link_to "Log In", new_user_session_path, class: "navbar-text pull-right" %>

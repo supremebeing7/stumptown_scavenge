@@ -21,6 +21,7 @@ gem 'cancancan', '~> 1.7'
 gem 'has_scope'
 gem 'responders'
 gem 'omniauth-facebook'
+gem 'dotenv-rails'
 
 
 group :development do

@@ -6,5 +6,7 @@ StumptownScavenge::Application.routes.draw do
 
   root to: "users#index"
 
+  resources :users, only: [:show]
+
   resources :locations
 end
