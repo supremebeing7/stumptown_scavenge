@@ -15,5 +15,8 @@
 /log/*.log
 /tmp
 
+# Ignore Public Pics
+/public/system/photos/*
+
 # Ignore Facebook APP-ID and Token
 .env

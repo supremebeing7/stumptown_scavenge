@@ -2,6 +2,9 @@ class LocationsController < InheritedResources::Base
   before_filter :set_location_params, only: [:create]
   load_and_authorize_resource
 
+  def show
+    @photo = Photo.new
+  end
 
 
 private

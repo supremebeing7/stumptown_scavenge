@@ -3,3 +3,15 @@
 <h1><%= @location.name %></h1>
 
 <h4><%= @location.address %></h4>
+<br>
+
+<%= render 'photos/photo' %>
+
+
+
+
+<%= form_for @photo, :url => photos_path, :html => { :multipart => true } do |form| %>
+  <%= form.file_field :pic %>
+  <%= form.hidden_field :location_id, value: @location.id %>
+  <%= form.submit %>
+<% end %>

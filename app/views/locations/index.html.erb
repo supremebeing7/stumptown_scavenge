@@ -1,7 +1,7 @@
 <h1>Hunting Spots</h1>
 
 <% @locations.each do |location| %>
-  <p><%= location.name %></p>
+  <p><%= link_to location.name, location %></p>
 <% end %>
 
 <% if can? :create, @location %>

@@ -9,4 +9,5 @@ StumptownScavenge::Application.routes.draw do
   resources :users, only: [:show]
 
   resources :locations
+  resources :photos
 end
